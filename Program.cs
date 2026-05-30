@@ -4,6 +4,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 builder.Services.AddHttpClient();
+builder.Services.AddSingleton<WashCarApi.Services.WashRecommendationService>();
 
 builder.Services.AddCors(options =>
 {
